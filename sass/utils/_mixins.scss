@@ -1,5 +1,0 @@
-@mixin animated($prop...) {
-    transition-property: $prop;
-    transition-duration: var(--trans-duration);
-    transition-timing-function: var(--trans-timing);
-}
