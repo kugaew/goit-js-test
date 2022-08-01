@@ -1,0 +1,99 @@
+.footer-newsletter__title {
+    margin-bottom: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: var(--footer-newsletter-title-color);
+
+    @media screen and (min-width: $desktop) {
+        text-align: left;
+    }
+}
+
+.footer-newsletter__field {
+    position: relative;
+    
+    display: block;
+
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+    }
+}
+
+.footer-newsletter__input {
+    width: 100%;
+    height: 50px;    
+    margin-bottom: 20px;
+    padding-left: 16px;
+
+    display: block;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+
+    color: var(--footer-newsletter-input-color);
+
+    border: 1px solid var(--footer-newsletter-input-border-color);
+    filter: drop-shadow(0px 4px 4px var(--footer-newsletter-input-filter-drop-shadow-color));
+    border-radius: 4px;
+    background-color: var(--footer-background-color);
+
+    @media screen and (min-width:$tablet) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 358px;
+        margin-right: 12px;
+        margin-bottom: 0;
+    }
+
+}
+
+.footer-newsletter__button {
+    position: relative;
+
+    width: 200px;
+    height: 50px;
+    padding-left: 29px;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: left;
+    letter-spacing: 0.06em;
+
+    color: var(--btn-text-color);
+    background-color: var(--footer-btn-color);
+    box-shadow: 0px 4px 4px var(--footer-newsletter-btn-box-shadow-color);
+    border-radius: 4px;
+    border: none;
+
+    cursor: pointer;
+}
+
+.footer-newsletter__buttons-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    margin-left: 10px;
+}

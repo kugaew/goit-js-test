@@ -1,0 +1,93 @@
+.hero {    
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 400px; 
+    min-width: 320px;
+    max-width: $mobile;       
+
+    background-color: var(--hero-background-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(to right, var(--hero-background-image-linear-gradient-color), var(--hero-background-image-linear-gradient-color)), url('../images/hero-480-1x-min.jpg');
+
+    text-align: center;
+
+    @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+        background-image: linear-gradient(to right, var(--hero-background-image-linear-gradient-color), var(--hero-background-image-linear-gradient-color)), url('../images/hero-480-2x-min.jpg');
+    }
+
+    @media screen and (min-width: $tablet) {        
+        max-width: $tablet;
+
+        background-image: linear-gradient(to right, var(--hero-background-image-linear-gradient-color), var(--hero-background-image-linear-gradient-color)), url('../images/hero-768-1x-min.jpg');
+
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {        
+                background-image: linear-gradient(to right, var(--hero-background-image-linear-gradient-color), var(--hero-background-image-linear-gradient-color)), url('../images/hero-768-2x-min.jpg');
+            }
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        height: 600px;
+        max-width: 1600px;
+
+        background-image: linear-gradient(to right, var(--hero-background-image-linear-gradient-color), var(--hero-background-image-linear-gradient-color)), url('../images/hero-1200-1x-min.jpg');
+
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, var(--hero-background-image-linear-gradient-color), var(--hero-background-image-linear-gradient-color)), url('../images/hero-1200-2x-min.jpg');
+            }
+    }
+}
+
+.hero__title {    
+    max-width: 360px;
+
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: var(--hero-title-color);
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $desktop) {
+        max-width: 696px;
+
+        font-size: 44px;
+        line-height: 60px;
+    }
+}
+
+.hero__button {
+    min-width: 200px;
+    padding: 10px 32px;
+
+    background-color: var(--action-color);
+    color: var(--hero-btn-text-color);
+
+    letter-spacing: 0.06em;
+    line-height: 30px;
+    font-weight: 700;
+
+    @include animated(background-color);
+
+    &:focus,
+    &:hover {
+        background-color: var(--hero-btn-bcg-color-action);
+    }
+}

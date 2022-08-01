@@ -1,0 +1,12 @@
+.header {
+    border-bottom: var(--header-border-bottom-color) solid 1px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;    
+
+    @media screen and (min-width: $tablet) {
+        justify-content: space-between;
+    }
+}

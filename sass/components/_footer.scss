@@ -1,0 +1,17 @@
+.footer {
+    padding: 60px 0;
+    min-width: 320px;
+
+    background-color: var(--footer-background-color);
+}
+
+.footer__container {
+    display: block;
+    
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+}
